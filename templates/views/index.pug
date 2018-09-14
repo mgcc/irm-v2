@@ -1,8 +1,33 @@
 extends ../layouts/default
 
 block content
-	.container: .jumbotron
-		|Hello
+
+	.container
+		#home-container
+			.row: .col-xs-12.col-md-offset-4.col-md-4
+
+				h1: | Insecticide
+				h1: | Resistance
+				h1: | Management
+				h2: | for Mango
+
+				form#sign-up-form
+					input(type="text", placeholder="Name").form-control
+					input(type="text", placeholder="Email").form-control
+					input(type="text", placeholder="password").form-control
+					input(type="text", placeholder="repeat password").form-control
+
+
+	//.container
+		#home-container
+			.container
+				.row.justify-content-center: .col-4
+
+					form#sign-up-form
+						input(type="text", placeholder="Name").form-control
+						input(type="text", placeholder="Email").form-control
+						input(type="text", placeholder="password").form-control
+						input(type="text", placeholder="repeat password").form-control
 
 	//.container: .jumbotron
 		img(src='/images/logo.svg', width='160')
